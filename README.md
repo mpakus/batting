@@ -1,3 +1,12 @@
+![Batting CI](https://github.com/mpakus/batting/workflows/Batting%20CI/badge.svg)
+
+Table of Contents
+=================
+
+  * [Description](#batting-averages-backend-exercise)
+  * [Installation](#installation)
+  * [Usage](#user-guide)
+
 # Batting Averages Backend Exercise
 
 Batting average is simple and a common way to measure batter’s performance.
@@ -63,6 +72,7 @@ names, it doesn't need to be uploaded from the user.
 Ruby 2.6.6
 
 > bundle install
+>
 > chmod +x ./bin/bat.rb
 
 ## User Guide
@@ -78,7 +88,7 @@ filter by Year
 > bin/bat.rb -y 2019
 
 filter by Team name
->bin/bat.rb -t "San Diego Padres"
+> bin/bat.rb -t "San Diego Padres"
 
 or use both
 > bin/bat.rb -y 2019 -t "San Diego Padres"
@@ -103,6 +113,7 @@ or use both
 | francty01 | 2019   | San Diego Padres | 0.234           |
 | mejiase01 | 2019   | San Diego Padres | 0.233           |
 | uriaslu01 | 2019   | San Diego Padres | 0.223           |
+...
 ```
 
 save to file

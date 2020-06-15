@@ -23,7 +23,7 @@ RSpec.describe Batting do
     end
 
     it { expect(result.count).to eq 10 }
-    it { expect(result).to match snapshot }
+    it { expect(result).to match_array snapshot }
   end
 
   context 'with year filter' do
@@ -38,7 +38,7 @@ RSpec.describe Batting do
     end
 
     it { expect(result.count).to eq 3 }
-    it { expect(result).to match snapshot }
+    it { expect(result).to match_array snapshot }
   end
 
   context 'with team name filter' do
@@ -53,7 +53,7 @@ RSpec.describe Batting do
     end
 
     it { expect(result.count).to eq 3 }
-    it { expect(result).to match snapshot }
+    it { expect(result).to match_array snapshot }
   end
 
   context 'with year and team name filter' do
@@ -66,6 +66,6 @@ RSpec.describe Batting do
     end
 
     it { expect(result.count).to eq 1 }
-    it { expect(result).to match snapshot }
+    it { expect(result).to match_array snapshot }
   end
 end

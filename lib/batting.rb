@@ -11,7 +11,7 @@ module Batting
   LOG_FILE     = 'logs/batting.log'
 
   def self.performance(options = {})
-    logger = Logger.new(File.open(Batting::LOG_FILE, File::CREAT | File::APPEND))
+    logger = ENV['BATTING'] == 'test' ? nil : Logger.new(File.open(Batting::LOG_FILE, File::CREAT | File::APPEND))
 
     Batting::Performance
       .new(logger)
